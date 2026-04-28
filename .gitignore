@@ -1,0 +1,26 @@
+# ── 비밀 키 (절대 커밋 금지) ─────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ──────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ── 데이터/결과물 (필요 시 주석 해제) ───
+# data/*.csv
+# web/images/*.png
+
+# ── IDE / OS ────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── 로그 ────────────────────────────────
+*.log

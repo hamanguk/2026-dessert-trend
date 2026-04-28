@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>데이터로 보는 2026 디저트 트렌드 지도</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <!-- ── 사이드바 ───────────────────────── -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">🍰</span>
+        <div>
+          <div class="brand-title">2026 Dessert Trend</div>
+          <div class="brand-sub">PKNU · Team Project</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#overview" class="nav-item active">📊 전체 트렌드</a>
+        <a href="#age" class="nav-item">👥 연령별 분석</a>
+        <a href="#keyword" class="nav-item">🔍 키워드 비교</a>
+        <a href="#device" class="nav-item">📱 기기별 트렌드</a>
+        <a href="#insight" class="nav-item">💡 인사이트</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        Data: 네이버 데이터랩<br />
+        Updated: 2026-04
+      </div>
+    </aside>
+
+    <!-- ── 메인 ──────────────────────────── -->
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>데이터로 보는 2026 디저트 트렌드 지도</h1>
+          <p class="subtitle">네이버 검색어 데이터로 읽는 Z세대·MZ 디저트 흐름</p>
+        </div>
+        <div class="period-badge">2025.05 ─ 2026.04</div>
+      </header>
+
+      <!-- KPI 요약 -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">분석 키워드 그룹</div>
+          <div class="kpi-value">3</div>
+          <div class="kpi-sub">우베 · 저당 · 요거트</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">대상 연령</div>
+          <div class="kpi-value">10·20·30</div>
+          <div class="kpi-sub">Gen Z 중심</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">분석 기기</div>
+          <div class="kpi-value">Mobile</div>
+          <div class="kpi-sub">인스타·SNS 중심</div>
+        </div>
+        <div class="kpi-card highlight">
+          <div class="kpi-label">주요 급상승</div>
+          <div class="kpi-value">우베 ↑</div>
+          <div class="kpi-sub">2026 Q1 기준</div>
+        </div>
+      </section>
+
+      <!-- 그래프 카드 -->
+      <section id="overview" class="card-grid">
+        <article class="card large">
+          <header class="card-header">
+            <h2>전체 키워드 트렌드 흐름</h2>
+            <span class="tag">월별</span>
+          </header>
+          <div class="card-body">
+            <img src="images/trend_map_01.png" alt="트렌드 흐름 그래프"
+                 onerror="this.parentElement.innerHTML='<div class=&quot;placeholder&quot;>📈 backend/naverapi.py 실행 후 자동으로 채워집니다</div>'" />
+          </div>
+          <footer class="card-footer">
+            우베·저당·요거트 3개 그룹의 검색 상대비율 변화
+          </footer>
+        </article>
+
+        <article id="age" class="card">
+          <header class="card-header">
+            <h2>연령별 분석</h2>
+            <span class="tag">담당 A</span>
+          </header>
+          <div class="card-body">
+            <div class="placeholder">👥 age_analysis.py 결과 이미지</div>
+          </div>
+        </article>
+
+        <article id="keyword" class="card">
+          <header class="card-header">
+            <h2>키워드 비교</h2>
+            <span class="tag">담당 B</span>
+          </header>
+          <div class="card-body">
+            <div class="placeholder">🔍 keyword_compare.py 결과 이미지</div>
+          </div>
+        </article>
+
+        <article id="device" class="card">
+          <header class="card-header">
+            <h2>기기별 트렌드</h2>
+            <span class="tag">담당 C</span>
+          </header>
+          <div class="card-body">
+            <div class="placeholder">📱 device_trend.py 결과 이미지</div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 인사이트 텍스트 -->
+      <section id="insight" class="insight-card">
+        <h2>💡 핵심 인사이트</h2>
+        <ul>
+          <li><strong>우베(Ube)</strong> — 2026년 들어 Z세대 모바일 검색량 상승. 비주얼 중심 SNS 친화 키워드.</li>
+          <li><strong>저당/제로</strong> — 30대 중심 꾸준한 수요. 건강 트렌드와 결합.</li>
+          <li><strong>요거트/과일</strong> — 계절성 강함. 여름 진입 구간 가파른 상승 예상.</li>
+        </ul>
+      </section>
+
+      <footer class="page-footer">
+        © 2026 PKNU 디저트 트렌드 분석팀 · Hosted on Dothome
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
