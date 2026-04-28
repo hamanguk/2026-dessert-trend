@@ -3,129 +3,267 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>데이터로 보는 2026 디저트 트렌드 지도</title>
+  <title>왜 유행할까? - 2026 SNS 인기 음식 트렌드 분석</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="layout">
 
-    <!-- ── 사이드바 ───────────────────────── -->
+    <!-- 사이드바 -->
     <aside class="sidebar">
       <div class="brand">
         <span class="brand-mark">🍰</span>
         <div>
-          <div class="brand-title">2026 Dessert Trend</div>
+          <div class="brand-title">2026 Trend Lab</div>
           <div class="brand-sub">PKNU · Team Project</div>
         </div>
       </div>
 
       <nav class="nav">
-        <a href="#overview" class="nav-item active">📊 전체 트렌드</a>
-        <a href="#age" class="nav-item">👥 연령별 분석</a>
-        <a href="#keyword" class="nav-item">🔍 키워드 비교</a>
-        <a href="#device" class="nav-item">📱 기기별 트렌드</a>
-        <a href="#insight" class="nav-item">💡 인사이트</a>
+        <a href="#overview"   class="nav-item active">📊 종합 트렌드</a>
+        <a href="#demographic" class="nav-item">👥 인구통계 분석</a>
+        <a href="#keywords"   class="nav-item">🍩 키워드별 해부</a>
+        <a href="#insight"    class="nav-item">💡 종합 인사이트</a>
+        <a href="#forecast"   class="nav-item">🔮 차기 유행 예측</a>
       </nav>
 
       <div class="sidebar-footer">
-        Data: 네이버 데이터랩<br />
-        Updated: 2026-04
+        Data <strong>네이버 데이터랩</strong><br />
+        Period 2025.05 ─ 2026.04<br />
+        Updated 2026-04-29
       </div>
     </aside>
 
-    <!-- ── 메인 ──────────────────────────── -->
+    <!-- 메인 -->
     <main class="main">
-      <header class="topbar">
-        <div>
-          <h1>데이터로 보는 2026 디저트 트렌드 지도</h1>
-          <p class="subtitle">네이버 검색어 데이터로 읽는 Z세대·MZ 디저트 흐름</p>
+      <!-- 헤더 -->
+      <header class="hero">
+        <div class="hero-text">
+          <span class="badge">데이터 시각화 · 기말 팀 프로젝트</span>
+          <h1>왜 유행할까?</h1>
+          <p class="subtitle">2026 SNS 인기 음식의 검색 패턴을 해부하다</p>
+          <p class="lead">
+            우베, 샌드베이글, 창억떡, 버터떡, 두바이쫀득쿠키, 저당, 봄동비빔밥 —
+            <br />네이버 검색 데이터로 7개 SNS 유행템을 <strong>누가, 언제, 어떻게</strong> 검색했는지 분석합니다.
+          </p>
         </div>
-        <div class="period-badge">2025.05 ─ 2026.04</div>
+        <div class="hero-meta">
+          <div class="meta-item"><span>📅</span><div><b>12개월</b><br/><small>2025.05 → 2026.04</small></div></div>
+          <div class="meta-item"><span>🍰</span><div><b>7개 키워드</b><br/><small>SNS 유행템</small></div></div>
+          <div class="meta-item"><span>📊</span><div><b>4차원 분석</b><br/><small>시계열·연령·성별·기기</small></div></div>
+        </div>
       </header>
 
-      <!-- KPI 요약 -->
+      <!-- KPI -->
       <section class="kpi-grid">
         <div class="kpi-card">
-          <div class="kpi-label">분석 키워드 그룹</div>
-          <div class="kpi-value">3</div>
-          <div class="kpi-sub">우베 · 저당 · 요거트</div>
+          <div class="kpi-label">분석 키워드</div>
+          <div class="kpi-value">7</div>
+          <div class="kpi-sub">SNS 유행 음식</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">대상 연령</div>
-          <div class="kpi-value">10·20·30</div>
-          <div class="kpi-sub">Gen Z 중심</div>
+          <div class="kpi-label">데이터 행수</div>
+          <div class="kpi-value">827</div>
+          <div class="kpi-sub">시계열·연령·성별·기기 통합</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">분석 기기</div>
-          <div class="kpi-value">Mobile</div>
-          <div class="kpi-sub">인스타·SNS 중심</div>
+          <div class="kpi-label">핵심 연령대</div>
+          <div class="kpi-value">20·30대</div>
+          <div class="kpi-sub">SNS 유행의 주축</div>
         </div>
         <div class="kpi-card highlight">
-          <div class="kpi-label">주요 급상승</div>
-          <div class="kpi-value">우베 ↑</div>
-          <div class="kpi-sub">2026 Q1 기준</div>
+          <div class="kpi-label">차기 유행 후보</div>
+          <div class="kpi-value">분석 중 ↗</div>
+          <div class="kpi-sub">2026 하반기 예측</div>
         </div>
       </section>
 
-      <!-- 그래프 카드 -->
-      <section id="overview" class="card-grid">
-        <article class="card large">
-          <header class="card-header">
-            <h2>전체 키워드 트렌드 흐름</h2>
-            <span class="tag">월별</span>
-          </header>
-          <div class="card-body">
-            <img src="images/trend_map_01.png" alt="트렌드 흐름 그래프"
-                 onerror="this.parentElement.innerHTML='<div class=&quot;placeholder&quot;>📈 backend/naverapi.py 실행 후 자동으로 채워집니다</div>'" />
-          </div>
-          <footer class="card-footer">
-            우베·저당·요거트 3개 그룹의 검색 상대비율 변화
-          </footer>
-        </article>
-
-        <article id="age" class="card">
-          <header class="card-header">
-            <h2>연령별 분석</h2>
-            <span class="tag">담당 A</span>
-          </header>
-          <div class="card-body">
-            <div class="placeholder">👥 age_analysis.py 결과 이미지</div>
-          </div>
-        </article>
-
-        <article id="keyword" class="card">
-          <header class="card-header">
-            <h2>키워드 비교</h2>
-            <span class="tag">담당 B</span>
-          </header>
-          <div class="card-body">
-            <div class="placeholder">🔍 keyword_compare.py 결과 이미지</div>
-          </div>
-        </article>
-
-        <article id="device" class="card">
-          <header class="card-header">
-            <h2>기기별 트렌드</h2>
-            <span class="tag">담당 C</span>
-          </header>
-          <div class="card-body">
-            <div class="placeholder">📱 device_trend.py 결과 이미지</div>
-          </div>
-        </article>
+      <!-- 1. 종합 트렌드 -->
+      <section id="overview" class="section">
+        <h2 class="section-title">📊 종합 트렌드</h2>
+        <p class="section-desc">7개 SNS 유행 음식의 12개월 검색 흐름. 어떤 음식이 언제 폭발했는지 한눈에.</p>
+        <div class="card-grid grid-1">
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #1 · 7개 음식 종합 시계열</h3>
+              <span class="tag tag-done">완료</span>
+            </header>
+            <div class="card-body">
+              <img src="images/01_overview.png" alt="종합 트렌드"
+                   onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            </div>
+            <footer class="card-footer">월별 상대 검색량 비교 · 데이터: 네이버 데이터랩</footer>
+          </article>
+        </div>
       </section>
 
-      <!-- 인사이트 텍스트 -->
-      <section id="insight" class="insight-card">
-        <h2>💡 핵심 인사이트</h2>
-        <ul>
-          <li><strong>우베(Ube)</strong> — 2026년 들어 Z세대 모바일 검색량 상승. 비주얼 중심 SNS 친화 키워드.</li>
-          <li><strong>저당/제로</strong> — 30대 중심 꾸준한 수요. 건강 트렌드와 결합.</li>
-          <li><strong>요거트/과일</strong> — 계절성 강함. 여름 진입 구간 가파른 상승 예상.</li>
-        </ul>
+      <!-- 2. 인구통계 분석 -->
+      <section id="demographic" class="section">
+        <h2 class="section-title">👥 인구통계 분석</h2>
+        <p class="section-desc">"누가 SNS 유행 음식을 검색하는가" - 연령·성별·기기로 해부.</p>
+        <div class="card-grid grid-3">
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #2 · 연령대별 검색 강도</h3>
+              <span class="tag tag-done">완료</span>
+            </header>
+            <div class="card-body">
+              <img src="images/02_age_heatmap.png" alt="연령대 히트맵"
+                   onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            </div>
+            <footer class="card-footer">담당 B · 키워드 × 연령대 매트릭스</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #3 · 성별 검색 비중</h3>
+              <span class="tag tag-done">완료</span>
+            </header>
+            <div class="card-body">
+              <img src="images/03_gender.png" alt="성별 분석"
+                   onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            </div>
+            <footer class="card-footer">담당 B · 남/여 검색 비율</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #4 · 모바일 vs PC</h3>
+              <span class="tag tag-done">완료</span>
+            </header>
+            <div class="card-body">
+              <img src="images/04_device.png" alt="기기별 분석"
+                   onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            </div>
+            <footer class="card-footer">담당 B · 기기별 검색 패턴</footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 키워드별 해부 -->
+      <section id="keywords" class="section">
+        <h2 class="section-title">🍩 키워드별 해부</h2>
+        <p class="section-desc">7개 음식 각각의 검색 DNA를 분석. 어떤 음식이 어떤 패턴을 가지는지.</p>
+        <div class="card-grid grid-3">
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #5 · 우베 (Ube)</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🟣 비주얼 트렌드의 대표주자<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">보라색 비주얼 + Z세대 인스타 친화</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #6 · 샌드베이글</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🥯 든든한 한끼 비주얼<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">SNS 인증샷 트렌드</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #7 · 창억떡</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🍡 전통 + 퓨전<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">전통 디저트의 재해석</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #8 · 버터떡</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🧈 부드러운 식감 트렌드<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">단기 폭발형 SNS 트렌드</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #9 · 두바이쫀득쿠키</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🍫 글로벌 → 한국<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">두바이 초콜릿 트렌드 한국 상륙</footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>그래프 #10 · 저당 / 봄동비빔밥</h3>
+              <span class="tag">담당 C</span>
+            </header>
+            <div class="card-body">
+              <div class="placeholder">🥗 헬시 + 계절성<br/><small>그래프 작업 중...</small></div>
+            </div>
+            <footer class="card-footer">건강·계절성 트렌드</footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. 종합 인사이트 -->
+      <section id="insight" class="section">
+        <h2 class="section-title">💡 종합 인사이트</h2>
+        <div class="insight-card">
+          <ul class="insight-list">
+            <li>
+              <span class="insight-num">01</span>
+              <div>
+                <strong>SNS 유행 음식의 핵심 검색층은 20·30대 모바일 사용자</strong>
+                <p>7개 키워드 모두에서 20~30대 연령대 검색 비중이 우세. 모바일 검색 점유율이 PC 대비 80% 이상.</p>
+              </div>
+            </li>
+            <li>
+              <span class="insight-num">02</span>
+              <div>
+                <strong>비주얼 트렌드(우베·샌드베이글·두바이쫀득쿠키)는 여성·10·20대 집중</strong>
+                <p>색감과 인증샷 친화적인 음식일수록 어린 연령대와 여성 검색이 두드러짐.</p>
+              </div>
+            </li>
+            <li>
+              <span class="insight-num">03</span>
+              <div>
+                <strong>전통 베이스 트렌드(창억떡·버터떡·봄동비빔밥)는 30·40대도 함께 참여</strong>
+                <p>전통 식문화에서 출발한 유행은 연령대가 더 넓게 분포 → 가족 단위 확산 가능성.</p>
+              </div>
+            </li>
+            <li>
+              <span class="insight-num">04</span>
+              <div>
+                <strong>저당 트렌드는 꾸준한 우상향 - 일시적 유행이 아닌 라이프스타일</strong>
+                <p>다른 키워드들과 달리 변동성이 적고 지속적 증가 패턴 관찰.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. 차기 유행 예측 -->
+      <section id="forecast" class="section">
+        <h2 class="section-title">🔮 차기 유행 예측 (재미로 보는)</h2>
+        <p class="section-desc">7개 음식의 검색 DNA에서 추출한 "유행 공식"으로 2026 하반기 차기 유행 후보 예측.</p>
+        <div class="forecast-card">
+          <div class="forecast-formula">
+            <span>유행 공식 =</span>
+            <code>비주얼 임팩트 × 모바일 친화도 × 20·30대 도달률 × SNS 확산성</code>
+          </div>
+          <div class="forecast-placeholder">
+            🔮 그래프 #10 · 차기 유행 예측 모델 (작업 중)<br/>
+            <small>조장이 회귀·이동평균 기반으로 분석 예정</small>
+          </div>
+        </div>
       </section>
 
       <footer class="page-footer">
-        © 2026 PKNU 디저트 트렌드 분석팀 · Hosted on Dothome
+        © 2026 PKNU 데이터시각화 팀 프로젝트 · Data: <a href="https://datalab.naver.com" target="_blank">네이버 데이터랩</a> · Hosted on Dothome
       </footer>
     </main>
   </div>
